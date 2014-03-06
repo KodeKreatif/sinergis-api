@@ -1,0 +1,40 @@
+{
+  "name": "kriting-api",
+  "version": "0.0.1",
+  "description": "Kriting API",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/diorahman/kriting-api"
+  },
+  "keywords": [
+    "kriting",
+    "api",
+    "sinergis"
+  ],
+  "author": "Dhi Aurrahman <diorahman@rockybars.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diorahman/kriting-api/issues"
+  },
+  "homepage": "https://github.com/diorahman/kriting-api",
+  "dependencies": {
+    "thunkify": "0.0.1",
+    "koa-mount": "~1.2.3",
+    "koa-compose": "~2.2.0",
+    "koa-router": "~3.1.0",
+    "koa-resource-router": "~0.2.0",
+    "koa": "~0.5.0",
+    "should": "^3.1.3"
+  },
+  "devDependencies": {
+    "supertest": "~0.9.0",
+    "mocha": "~1.17.1"
+  }
+}

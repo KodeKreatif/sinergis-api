@@ -10,7 +10,7 @@ module.exports = function (policy) {
   var point = config.mount || "/api/1";
 
   var api = koa();
-  api.use(compose(endpoints(policy)));  
+  api.use(compose(endpoints(policy).stack));  
 
   return {
     mount : mount(point, api),

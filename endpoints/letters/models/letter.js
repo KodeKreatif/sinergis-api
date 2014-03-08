@@ -12,7 +12,7 @@ var Letter = function () {
       var i = letters.length;
       while (i--) {
         var letter = letters[i];
-        if (letter && user.id == id) {
+        if (letter && letter.id == id) {
           return cb (null, letter);
         }
       }

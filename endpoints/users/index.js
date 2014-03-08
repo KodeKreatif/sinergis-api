@@ -12,7 +12,7 @@ module.exports = function (policy) {
 
   var policy = policy || {};
   var router = new Router();
-  var authorize = fort("users", policy);
+  var authorize = fort(name, policy);
 
   router.get (name, "/users", authorize, function * (next) {
     // @todo try catch here

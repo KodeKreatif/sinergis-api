@@ -12,5 +12,9 @@ module.exports = function (policy) {
   var api = koa();
   api.use(compose(endpoints(policy)));  
 
-  return mount(point, api);
+  return {
+    mount : mount(point, api),
+    path : __dirname,
+    type : "api"
+  }
 }

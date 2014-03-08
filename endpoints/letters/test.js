@@ -8,7 +8,7 @@ describe ("GET /api/1/letters", function (){
   it ("should respond with letters", function (done) {
 
     var app = koa();
-    app.use (api());
+    app.use (api().mount);
 
     request (app.listen())
     .get ("/api/1/letters")

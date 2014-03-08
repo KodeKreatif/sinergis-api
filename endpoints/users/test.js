@@ -8,7 +8,7 @@ describe ("GET /api/1/users", function (){
   it ("should respond with users", function (done) {
 
     var app = koa();
-    app.use (api());
+    app.use (api().mount);
 
     request (app.listen())
     .get ("/api/1/users")
